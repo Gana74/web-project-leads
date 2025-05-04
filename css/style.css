@@ -1236,7 +1236,6 @@ a {
 .contact__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   height: 100%;
   border-radius: 60px;
   background: var(--light-grey);
