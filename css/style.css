@@ -1176,6 +1176,7 @@ a {
 
 .buy-leads {
   padding: 0 148px 0 148px;
+  margin-bottom: 120px;
 }
 
 .buy-leads__title {
@@ -1228,4 +1229,28 @@ a {
   cursor: pointer;
   background: none;
   border: none;
+}
+
+/*------------------------------------------------------------------------------------------------------------------ contact */
+
+.contact__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  height: 100%;
+  border-radius: 60px;
+  background: var(--light-grey);
+}
+
+.contact__text {
+  padding: 80px;
+}
+
+.contact__title {
+  font-family: var(--second-family);
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 108%;
+  color: var(--dark-grey);
 }

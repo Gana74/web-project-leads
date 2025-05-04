@@ -1,5 +1,6 @@
 //burger//
 
+
 let burger = document.querySelector(".burger");
 let menu = document.querySelector(".header__nav");
 let menulinks = document.querySelectorAll(".nav__link-menu");
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     panelClass: "accordion__bottom",
   });
 });
+
 
 //swiper//
 
