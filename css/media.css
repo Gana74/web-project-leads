@@ -1,0 +1,267 @@
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .header__content {
+    padding: 10px;
+    gap: 15px;
+    justify-content: space-between;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
+
+  .nav__header-list,
+  .nav__header-list2 {
+    min-width: unset;
+    width: 100%;
+    margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero__title {
+    font-size: clamp(32px, 8vw, 48px);
+    line-height: 1.2;
+    word-wrap: break-word;
+  }
+
+  .hero__content-text {
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .hero__present {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero__present-item {
+    flex: 0 1 calc(50% - 15px);
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .header__logo {
+    margin: 0;
+    max-width: 140px;
+  }
+
+  .nav__header-item--telephone {
+    font-size: 20px;
+  }
+
+  .hero__container {
+    padding: 20px 10px;
+  }
+
+  .hero__content-text--flex {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero__desc {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .hero__btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 12px;
+    font-size: 18px;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    border-radius: 10px;
+  }
+
+  .hero__present-item {
+    flex: 0 1 100%;
+    text-align: center;
+  }
+
+  /* Общие стили для мобильных */
+  body {
+    font-size: 3.5vw;
+    padding: 0;
+  }
+  .container {
+    padding: 2vw 1vw;
+    width: 100vw;
+  }
+  .flex {
+    flex-direction: column !important;
+    gap: 12px;
+  }
+  .header__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .header__logo img {
+    max-width: 120px;
+    height: auto;
+  }
+  .nav__header-list,
+  .nav__header-list2 {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .nav__header-item--contact {
+    margin-bottom: 8px;
+  }
+  .hero__container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+  .hero__title {
+    font-size: 6vw;
+    text-align: left;
+  }
+  .hero__desc {
+    font-size: 4vw;
+  }
+  .hero__btn {
+    width: 100%;
+    font-size: 4vw;
+    padding: 12px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    border-radius: 0;
+  }
+  .hero__content-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  .conditions__list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .price__list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .price__menu {
+    width: 100%;
+    min-width: unset;
+  }
+  .reviews__client-list {
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+  }
+  .reviews__client-item {
+    min-width: 220px;
+    scroll-snap-align: start;
+  }
+  .registration__button {
+    width: 100%;
+    font-size: 4vw;
+    padding: 12px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    border-radius: 0;
+  }
+  .footer__content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .footer__navigation {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .secondary {
+    opacity: 0;
+    pointer-events: none;
+    max-height: 0;
+    transition: opacity 0.3s, max-height 0.3s;
+    overflow: hidden;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero__title {
+    font-size: 7vw;
+  }
+  .hero__desc {
+    font-size: 4.5vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero__title {
+    font-size: 22px;
+  }
+  .hero__desc {
+    font-size: 5vw;
+  }
+  .nav__header-item--telephone {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 363px) {
+  body {
+    font-size: 3vw;
+  }
+  .container {
+    padding: 5px;
+  }
+  .header__logo {
+    max-width: 120px;
+  }
+  .nav__header-item--telephone {
+    font-size: 18px;
+  }
+  .hero__title {
+    font-size: 24px;
+  }
+  .hero__desc {
+    font-size: 14px;
+  }
+  .hero__btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .secondary {
+    opacity: 0;
+    pointer-events: none;
+    max-height: 0;
+    transition: opacity 0.3s, max-height 0.3s;
+    overflow: hidden;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
