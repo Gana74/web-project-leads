@@ -1,19 +1,13 @@
 //burger//
 
+const burgerMenu = document.querySelector(".burger-menu");
+const navList = document.querySelector(".nav__header-list");
+const navList2 = document.querySelector(".nav__header-list2");
 
-let burger = document.querySelector(".burger");
-let menu = document.querySelector(".header__nav");
-let menulinks = document.querySelectorAll(".nav__link-menu");
-
-burger.addEventListener(
-  "click",
-
-  function () {
-    burger.classList.toggle("burger--active");
-
-    menu.classList.toggle("header__nav--active");
-  }
-);
+burgerMenu.addEventListener("click", function () {
+  navList.classList.toggle("active");
+  burgerMenu.classList.toggle("open");
+});
 
 //accordion//
 
@@ -25,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
     panelClass: "accordion__bottom",
   });
 });
-
 
 //swiper//
 

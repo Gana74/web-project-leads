@@ -1,14 +1,171 @@
+@media (max-width: 1920px) {
+  .hero__present {
+    display: none;
+  }
+
+  .reviews__client-rating {
+    display: none;
+  }
+
+  .registration {
+    padding: 60px;
+  }
+
+  .contact__footer {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .contact__footer-svg {
+    display: inline-block;
+  }
+
+  .contact__img {
+  }
+}
+
+@media (max-width: 1780px) {
+  .hero__content-img {
+    display: none;
+  }
+
+  .hero__content-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero__desc--smile {
+    margin-right: 0;
+  }
+
+  .hero__content-text--flex {
+    justify-content: center;
+  }
+
+  .hero__btn {
+    width: 30%;
+  }
+
+  .reviews__buyer-title {
+    padding: 0 15% 20px;
+  }
+
+  .price__menu-button {
+    width: 100%;
+  }
+
+  .work__technology-pic {
+    position: unset;
+  }
+
+  .work__technology-pic--img {
+    padding-left: 0;
+  }
+
+  .work__technology-svg1 {
+    position: unset;
+    display: inline;
+  }
+
+  .work__technology-svg2 {
+    position: unset;
+    margin-left: 70%;
+  }
+
+  .work__technology-title,
+  .work__technology-text {
+    padding-right: 0;
+  }
+
+  .work__technology-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .buy-leads {
+    padding: 0 50px;
+  }
+
+  .contact__text {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  .nav__header-list,
+  .nav__header-list2 {
+    display: none;
+  }
+
+  .nav__header-list.active,
+  .nav__header-list2.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #251d1d;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .conditions__title {
+    padding: 0 16%;
+    padding-bottom: 40px;
+  }
+
+  .registration__pic {
+    display: none;
+  }
+
+  .registration__text {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .registration {
+    height: 100%;
+  }
+
+  .price__title {
+    padding: 0 25%;
+    padding-bottom: 20px;
+  }
+
+  .price__subtitle {
+    padding: 0 11%;
+    padding-bottom: 65px;
+  }
+
+  .work__argument-title {
+    padding: 0 25% 20px;
+  }
+
+  .contact__container {
+    display: block;
+  }
+
+  .contact__img {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;
     overflow-x: hidden;
-    width: 100%;
   }
 
   .header__content {
     padding: 10px;
-    gap: 15px;
-    justify-content: space-between;
+    gap: 10px;
   }
 
   .header__nav {
@@ -20,24 +177,17 @@
     min-width: unset;
     width: 100%;
     margin-right: 0;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
   .hero__title {
-    font-size: clamp(32px, 8vw, 48px);
+    font-size: clamp(24px, 6vw, 32px);
     line-height: 1.2;
     word-wrap: break-word;
   }
 
-  .hero__content-text {
-    width: 100%;
-    padding: 40px 0;
-  }
-
   .hero__present {
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 15px;
     justify-content: center;
   }
 
@@ -58,11 +208,11 @@
 
   .header__logo {
     margin: 0;
-    max-width: 140px;
+    max-width: 180px;
   }
 
   .nav__header-item--telephone {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .hero__container {
@@ -75,7 +225,6 @@
   }
 
   .hero__desc {
-    width: 100%;
     font-size: 16px;
     line-height: 1.4;
   }
@@ -84,12 +233,8 @@
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
-    padding: 12px;
+    padding: 10px;
     font-size: 18px;
-    position: relative;
-    bottom: auto;
-    left: auto;
-    border-radius: 10px;
   }
 
   .hero__present-item {
@@ -235,23 +380,14 @@
     font-size: 3vw;
   }
   .container {
-    padding: 5px;
-  }
-  .header__logo {
-    max-width: 120px;
-  }
-  .nav__header-item--telephone {
-    font-size: 18px;
+    padding: 1vw;
+    width: 100vw;
   }
   .hero__title {
-    font-size: 24px;
+    font-size: 9vw;
   }
   .hero__desc {
-    font-size: 14px;
-  }
-  .hero__btn {
-    font-size: 16px;
-    padding: 10px;
+    font-size: 5.5vw;
   }
   .secondary {
     opacity: 0;

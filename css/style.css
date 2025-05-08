@@ -30,7 +30,6 @@ img {
 
 body {
   max-width: 1920px;
-  /* margin: 0 auto; */
   font-family: var(--font-family);
   background-color: var(--white);
 }
@@ -104,6 +103,30 @@ a {
 
 /*--------------------------------------------------------------------------------header*/
 
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.burger-menu__line {
+  width: 30px;
+  height: 3px;
+  color: #fff;
+  border: 1px solid #c0c0c0;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
 .header {
   background-color: var(--dark-grey);
   border-radius: 0 0 35px 35px;
@@ -173,15 +196,6 @@ a {
 .nav__link-menu:active {
   background: none;
   color: #3f3f3f;
-}
-
-.nav__burger-bg1,
-.nav__byrger-bg2 {
-  display: none;
-}
-
-.burger {
-  display: none;
 }
 
 /*-----------------------------------------------------------------------------hero*/
@@ -370,7 +384,7 @@ a {
 .price__menu {
   flex-direction: column;
   width: 580px;
-  height: 813px;
+  min-height: 813px;
   padding: 40px;
   border-radius: 30px;
   background: var(--light-grey);
@@ -470,7 +484,7 @@ a {
 }
 
 .price__menu-button {
-  width: 500px;
+  width: 100%;
   height: 72px;
   border: none;
   border-radius: 20px;
@@ -500,9 +514,11 @@ a {
 
 .additional__menu {
   position: relative;
-  display: inline-table;
-  width: 730px;
-  height: 330px;
+  flex-direction: column;
+  flex: 1;
+  /* display: inline-table; */
+  max-width: 730px;
+  max-height: 330px;
   padding: 40px;
   vertical-align: middle;
   border-radius: 40px;
@@ -558,11 +574,16 @@ a {
 }
 
 .additional__button {
-  width: 650px;
+  width: 100%;
   height: 72px;
   padding: 20px 60px;
   border-radius: 20px;
   background: var(--orange-juice);
+}
+
+.additional__cntainer {
+  display: flex;
+  justify-content: center;
 }
 
 /* ---------------------------------------------------------------reviews */
@@ -575,7 +596,7 @@ a {
 }
 
 .reviews__buyer-title {
-  padding: 0 25% 20px;
+  padding: 0 20% 20px;
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 48px;
@@ -624,9 +645,10 @@ a {
 }
 
 .reviews__client-item {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 430px;
-  height: 636px;
+  min-height: 636px;
   padding: 40px;
   border-radius: 30px;
   background: var(--light-grey);
@@ -636,8 +658,9 @@ a {
   margin-right: 20px;
 }
 
-.reviews__clienr-rating {
+.reviews__client-number {
   display: block;
+  margin-right: auto;
   padding-bottom: 20px;
   font-family: var(--second-family);
   font-weight: 700;
@@ -646,13 +669,15 @@ a {
   color: var(--dark-grey);
 }
 
-.reviews__client-rating--star {
-  position: absolute;
-  top: 43px;
-  right: 45px;
+.reviews__client-rating {
+  display: flex;
+}
+
+.reviews__client-star {
 }
 
 .reviews__client-text {
+  margin-bottom: auto;
   padding-bottom: 20px;
   font-weight: 400;
   font-size: 24px;
@@ -670,11 +695,15 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 580px;
+  width: 100%;
   height: 320px;
   margin-bottom: 12px;
   border-radius: 40px;
   background: var(--dark-grey);
+}
+
+.client-video {
+  width: 1005px;
 }
 
 .client-video:nth-last-child(n + 2) {
@@ -802,13 +831,13 @@ a {
 }
 
 .work__present {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 120px;
 }
 
 .work__present-title {
   display: inline-block;
-  padding-left: 24%;
-  padding-right: 21px;
   padding-bottom: 40px;
   font-family: var(--second-family);
   font-weight: 700;
@@ -819,6 +848,7 @@ a {
 }
 
 .work__present-title--orange {
+  padding-right: 21px;
   color: var(--orange-juice);
 }
 
@@ -834,7 +864,7 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  width: 1180px;
+  max-width: 1180px;
   height: 540px;
   background: var(--dark-grey);
 }
@@ -868,6 +898,7 @@ a {
 }
 
 .argument__fact {
+  flex: 1;
   max-width: 580px;
   min-height: 317px;
   margin-bottom: 27px;
@@ -881,8 +912,13 @@ a {
 }
 
 .argument__fact-number {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 13px;
+  margin-right: auto;
+}
+
+.argument__fact-number--text {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 80px;
@@ -891,12 +927,9 @@ a {
 }
 
 .argument__fact-star {
-  position: relative;
-  bottom: 9px;
-  left: 340px;
 }
 
-.argument-fact__text {
+.argument__fact-text {
   font-weight: 400;
   font-size: 24px;
   color: var(--dark-grey);
