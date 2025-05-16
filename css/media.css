@@ -19,9 +19,6 @@
   .contact__footer-svg {
     display: inline-block;
   }
-
-  .contact__img {
-  }
 }
 
 @media (max-width: 1780px) {
@@ -93,31 +90,36 @@
 }
 
 @media (max-width: 1600px) {
-  .burger-menu {
-    display: flex;
+  .nav__header-list2 {
+    min-width: auto;
   }
 
-  .nav__header-list,
-  .nav__header-list2 {
+  .nav__header-item--icon {
+    display: inline;
+  }
+  .nav__header-item--telephone {
     display: none;
   }
 
-  .nav__header-list.active,
-  .nav__header-list2.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    height: 100%;
-    width: 200px;
-    background-color: #251d1d;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  .nav__header-list {
+    margin-right: 0;
   }
 
   .conditions__title {
     padding: 0 16%;
     padding-bottom: 40px;
+  }
+
+  .conditions__list-item {
+    min-height: 350px;
+    min-width: 750px;
+    max-width: 100%;
+  }
+
+  .item__pic {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 
   .registration__pic {
@@ -148,12 +150,96 @@
     padding: 0 25% 20px;
   }
 
+  .slide__every {
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* width: 100%; */
+    height: 100%;
+    /* justify-content: space-between; */
+  }
+
+  .slide {
+    /* height: 100%; */
+  }
+
+  .slide__left {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .slide__left-number {
+    display: contents;
+    padding-right: 20px;
+  }
+
+  .slide__left-smile {
+    margin-right: 20px;
+  }
+
+  .slide__title {
+    padding: 50px 32%;
+  }
+
   .contact__container {
     display: block;
   }
 
   .contact__img {
     display: none;
+  }
+
+  .reviews__client-list {
+    flex-direction: column;
+  }
+
+  .reviews__client-item {
+    width: 100%;
+    height: 100%;
+    min-height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .reviews__client-rating {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  .reviews__client-number {
+    margin-right: 20px;
+  }
+
+  .work__technology-caption {
+    flex: 2;
+  }
+}
+
+@media (max-width: 1250px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  .nav__header-list,
+  .nav__header-list2 {
+    display: none;
+  }
+
+  .nav__header-list.active,
+  .nav__header-list2.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #251d1d;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 }
 

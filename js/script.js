@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //swiper//
 
 const swiper = new Swiper(".swiper", {
+  // autoHeight: true,
   slidesPerView: 1,
   spaceBetween: 30,
   longSwipes: false,

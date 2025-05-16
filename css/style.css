@@ -24,6 +24,7 @@ html {
 
 img {
   display: block;
+  height: auto;
   max-width: 100%;
   object-fit: cover;
 }
@@ -179,6 +180,10 @@ a {
   color: var(--white);
 }
 
+.nav__header-item--icon {
+  display: none;
+}
+
 .nav__link-menu {
   font-weight: 400;
   font-size: 24px;
@@ -317,7 +322,8 @@ a {
 .item__colum {
   flex: 1;
   margin-left: 40px;
-  margin-top: 67px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .item__title {
@@ -336,8 +342,7 @@ a {
 .item__background {
   flex: 1;
   position: relative;
-  width: 364px;
-  height: 349px;
+
   background: url("../img/Background.png") no-repeat;
   background-position: bottom right;
   overflow: hidden;
@@ -673,9 +678,6 @@ a {
   display: flex;
 }
 
-.reviews__client-star {
-}
-
 .reviews__client-text {
   margin-bottom: auto;
   padding-bottom: 20px;
@@ -926,9 +928,6 @@ a {
   color: var(--dark-grey);
 }
 
-.argument__fact-star {
-}
-
 .argument__fact-text {
   font-weight: 400;
   font-size: 24px;
@@ -1021,7 +1020,7 @@ a {
 .slide__left-smile {
   display: inline-block;
   margin-left: 17px;
-  width: 70px;
+  min-width: 70px;
   height: 70px;
 }
 
@@ -1250,7 +1249,7 @@ a {
 }
 
 .hidden-paragraph {
-  display: none; /* Скрываем параграфы по умолчанию */
+  display: none;
 }
 
 .toggle-button {
