@@ -1364,3 +1364,9 @@ a {
   text-align: center;
   color: var(--grey);
 }
+.footer__item:not(:last-child)::after {
+  content: " |  ";
+  display: inline;
+
+  color: var(--grey);
+}

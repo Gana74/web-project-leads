@@ -74,6 +74,10 @@
     padding-right: 0;
   }
 
+  .work__argument-title {
+    padding: 0 26% 40px;
+  }
+
   .work__technology-caption {
     display: flex;
     flex-direction: column;
@@ -146,22 +150,12 @@
     padding-bottom: 65px;
   }
 
-  .work__argument-title {
-    padding: 0 25% 20px;
-  }
-
   .slide__every {
     flex-direction: column;
     margin-bottom: 100px;
     padding-left: 50px;
     padding-right: 50px;
-    /* width: 100%; */
     height: 100%;
-    /* justify-content: space-between; */
-  }
-
-  .slide {
-    /* height: 100%; */
   }
 
   .slide__left {
@@ -214,8 +208,67 @@
     margin-right: 20px;
   }
 
+  .reviews__buyer-text {
+    padding: 0 7% 40px;
+  }
+
+  .reviews__buyer-title {
+    padding: 0 10% 20px;
+  }
+
+  .reviews__client-subtitle {
+    padding: 0 15% 38px;
+  }
+
   .work__technology-caption {
     flex: 2;
+  }
+
+  .work__argument-title {
+    padding: 0 17% 20px;
+  }
+
+  .work__argument-items {
+    flex-direction: column;
+  }
+
+  .work__argument-desc {
+    padding: 0 10% 40px;
+  }
+
+  .work__present-video {
+    margin: 0 10%;
+  }
+
+  .argument-item {
+    display: flex;
+    max-width: 100%;
+  }
+
+  .argument-item__icon {
+    min-width: 100px;
+    background-repeat: no-repeat;
+  }
+
+  .argument-item__text {
+    margin-bottom: 0;
+  }
+
+  .faq__title {
+    padding: 0px 21% 40px;
+    text-align: center;
+  }
+
+  .faq__container-img {
+    display: none;
+  }
+
+  .accordion__list {
+    max-width: 100%;
+  }
+
+  .buy-leads__button {
+    width: 100%;
   }
 }
 
