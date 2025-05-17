@@ -43,6 +43,7 @@ h4,
 h6,
 figure,
 ul,
+ol,
 li {
   margin: 0;
   padding: 0;
@@ -484,6 +485,10 @@ a {
   padding-bottom: 20px;
 }
 
+.price {
+  margin-bottom: 120px;
+}
+
 .price__menu-desc:last-of-type {
   margin-bottom: auto;
 }
@@ -503,7 +508,6 @@ a {
 }
 
 .price__additional {
-  margin-bottom: 120px;
   text-align: center;
 }
 
@@ -844,7 +848,7 @@ a {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 48px;
-  line-height: 108%;
+  line-height: 0;
   text-align: center;
   color: var(--dark-grey);
 }
@@ -859,6 +863,8 @@ a {
   width: 72px;
   height: 69px;
   background-image: url(../img/Camera.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .work__present-video {
@@ -1053,7 +1059,7 @@ a {
 }
 
 .slide__right {
-  padding-top: 10px;
+  padding-top: 20px;
   width: 730px;
 }
 

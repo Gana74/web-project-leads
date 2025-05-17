@@ -323,8 +323,21 @@
     max-width: 100%;
   }
 
+  .slide__left-slogan {
+    font-size: 35px;
+  }
+
   .work__argument-list {
     flex-direction: column;
+  }
+
+  .work__present-title {
+    font-size: 35px;
+  }
+
+  .work__present-title--smile {
+    width: 56px;
+    height: 56px;
   }
 
   .argument__fact:nth-last-child(n + 2) {
@@ -387,6 +400,10 @@
     display: none;
   }
 
+  .conditions {
+    margin-bottom: 80px;
+  }
+
   .conditions__list-item {
     min-width: 100%;
     min-height: 100%;
@@ -403,6 +420,104 @@
 
   .item__title {
     padding-bottom: 15px;
+  }
+
+  .price {
+    margin-bottom: 80px;
+  }
+
+  .price__list {
+    margin-bottom: 60px;
+  }
+
+  .price__title {
+    padding: 0 15% 20px;
+    font-size: 35px;
+  }
+
+  .price__subtitle {
+    padding: 0 7% 65px;
+    font-size: 28px;
+  }
+
+  .additional__title,
+  .reviews__buyer-title {
+    font-size: 35px;
+  }
+
+  .reviews {
+    margin-bottom: 80px;
+  }
+  .reviews__client-subtitle {
+    padding: 0 10% 38px;
+    font-size: 28px;
+  }
+
+  .reviews__buyer {
+    margin-bottom: 80px;
+  }
+
+  .registration {
+    padding: 30px;
+  }
+
+  .registration__button {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .registration__slogan {
+    font-size: 35px;
+  }
+
+  .registration {
+    margin-bottom: 80px;
+  }
+
+  .work__technology {
+    margin-bottom: 80px;
+  }
+
+  .slide__title {
+    font-size: 5vh;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .slide__every {
+    margin-bottom: 0;
+  }
+
+  .slider__right-item,
+  .slide__rihgt-text {
+    font-size: 18px;
+  }
+
+  .slide {
+    height: 500px;
+  }
+
+  .work__present-title,
+  .work__argument-title {
+    font-size: 35px;
+  }
+
+  .work,
+  .work__present,
+  .work__instruction {
+    margin-bottom: 80px;
+  }
+
+  .work__argument-desc {
+    font-size: 25px;
+  }
+
+  .argument__fact {
+    min-height: 100%;
+  }
+
+  .argument__fact-number--text {
+    font-size: 50px;
   }
 }
 
