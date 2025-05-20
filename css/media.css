@@ -363,6 +363,14 @@
     display: inline-block;
     margin-right: 40px;
   }
+
+  .footer__href {
+    font-size: 15px;
+  }
+
+  .footer__item:not(:last-child)::after {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -470,12 +478,12 @@
     font-size: 35px;
   }
 
-  .registration {
+  .work__technology {
     margin-bottom: 80px;
   }
 
-  .work__technology {
-    margin-bottom: 80px;
+  .work__argument {
+    margin-bottom: 70px;
   }
 
   .slide__title {
@@ -488,16 +496,10 @@
     margin-bottom: 0;
   }
 
-  .slider__right-item,
-  .slide__rihgt-text {
-    font-size: 18px;
+  .slide__right {
+    width: 100%;
   }
 
-  .slide {
-    height: 500px;
-  }
-
-  .work__present-title,
   .work__argument-title {
     font-size: 35px;
   }
@@ -506,6 +508,10 @@
   .work__present,
   .work__instruction {
     margin-bottom: 80px;
+  }
+
+  .work__present-video {
+    margin: 0;
   }
 
   .work__argument-desc {
@@ -519,12 +525,52 @@
   .argument__fact-number--text {
     font-size: 50px;
   }
+
+  .faq__title {
+    padding: 0;
+    padding-bottom: 40px;
+  }
+
+  .buy-leads__title {
+    font-size: 35px;
+  }
+
+  .faq__title,
+  .contact__title {
+    font-size: 35px;
+  }
+
+  .buy-leads__button,
+  .footer__contact {
+    font-size: 18px;
+  }
+
+  .footer__copyright {
+    font-size: 25px;
+  }
+
+  .contact__desc {
+    font-size: 25px;
+    margin-bottom: 45px;
+  }
+  .footer__href {
+    font-size: 10px;
+  }
+  .footer__item:not(:last-child)::after {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;
     overflow-x: hidden;
+  }
+
+  .btn {
+    padding: 10px;
+    font-size: 18px;
+    height: auto;
   }
 
   .header__content {
@@ -558,6 +604,139 @@
   .hero__present-item {
     flex: 0 1 calc(50% - 15px);
     min-width: 140px;
+  }
+
+  .hero__content-text {
+    padding: 50px 0;
+  }
+
+  .hero__btn {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .hero {
+    margin-bottom: 80px;
+  }
+
+
+
+  .price__subtitle,
+  .reviews__buyer-text,
+  .reviews__client-subtitle,
+  .work__argument-desc {
+    font-size: 18px;
+    padding: 0;
+    padding-bottom: 45px;
+  }
+
+  .additional__title,
+  .additional__menu-title,
+  .item__title,
+  .additional__price--orange,
+  .reviews__buyer-title,
+  .price__title,
+  .conditions__title,
+  .reviews__client-title,
+  .work__technology-title,
+  .registration__slogan,
+  .work__present-title,
+  .work__argument-title,
+  .buy-leads__title {
+    font-size: 25px;
+    padding: 0;
+    padding-bottom: 40px;
+    margin: 0;
+  }
+
+  .reviews__client-list--video {
+    flex-direction: column;
+  }
+
+  .client-video {
+    width: 100%;
+  }
+
+  .client-video:nth-last-child(n + 2) {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .work__technology-pic,
+  .hero__desc--smile,
+  .work__present-title--smile,
+  .work__technology-title--smile,
+  .buy-leads__svg {
+    display: none;
+  }
+
+  .slide__left {
+    flex-direction: column;
+  }
+
+  .slide__left-smile {
+    background-repeat: no-repeat;
+  }
+
+  .slide__left-number {
+    display: inline-flex;
+  }
+
+  .slide__left-slogan {
+    font-size: 25px;
+  }
+
+  .slide__right-list,
+  .slider__right-item,
+  .slide__rihgt-text,
+  .accordion__title,
+  .accordion__bottom-text,
+  .buy-leads__text,
+  .toggle-button,
+  .item__text,
+  .hero__desc,
+  .work__technology-text,
+  .argument-item__text {
+    font-size: 18px;
+  }
+
+  .slide {
+    height: 760px;
+  }
+
+  .accordion__top,
+  .accordion__bottom-text {
+    padding: 20px;
+  }
+
+  .accordion__top::after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .accordion__item.is-active .accordion__top::after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .accordion {
+    margin-right: 0;
+  }
+
+  .accordion__item:nth-last-child(n + 2) {
+    margin-bottom: 0;
+  }
+
+  .buy-leads {
+    padding: 0;
+  }
+
+  .faq__container {
+    margin-bottom: 50px;
+  }
+
+  .buy-leads__right {
+    text-align: center;
   }
 }
 
@@ -715,27 +894,6 @@
   img {
     max-width: 100%;
     height: auto;
-  }
-}
-
-@media (max-width: 425px) {
-  .hero__title {
-    font-size: 7vw;
-  }
-  .hero__desc {
-    font-size: 4.5vw;
-  }
-}
-
-@media (max-width: 375px) {
-  .hero__title {
-    font-size: 22px;
-  }
-  .hero__desc {
-    font-size: 5vw;
-  }
-  .nav__header-item--telephone {
-    font-size: 20px;
   }
 }
 

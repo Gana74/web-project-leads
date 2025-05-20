@@ -727,7 +727,7 @@ a {
 .registration {
   /* width: 1780px; */
   height: 523px;
-  margin-bottom: 120px;
+  margin-bottom: 0;
   border-radius: 40px;
   padding: 60px 120px;
   background: var(--dark-grey);
@@ -848,7 +848,6 @@ a {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 48px;
-  line-height: 0;
   text-align: center;
   color: var(--dark-grey);
 }
@@ -1154,6 +1153,7 @@ a {
 }
 
 .accordion__title {
+  width: 90%;
   font-weight: 400;
   font-size: 24px;
   color: var(--dark-grey);
