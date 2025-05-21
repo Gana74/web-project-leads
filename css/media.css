@@ -855,7 +855,12 @@
 
   .price__menu-text,
   .desc__text,
-  .additional__price {
+  .additional__price,
+  .argument__fact-text,
+  .contact__desc,
+  .contact__footer,
+  .footer__copyright,
+  .footer__contact {
     font-size: 18px;
   }
 
@@ -863,7 +868,8 @@
   .additional__menu,
   .reviews__client-item,
   .argument-item,
-  .contact__text {
+  .contact__text,
+  .argument__fact {
     padding: 20px;
   }
 
@@ -893,4 +899,35 @@
 }
 
 @media (max-width: 390px) {
+  .hero__title {
+    font-size: 30px;
+  }
+
+  .registration {
+    padding: 20px;
+  }
+
+  .registration__slogan {
+    font-size: 20px;
+  }
+
+  .slide__title {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+
+  .slide__left-number {
+    padding-right: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .slide__left {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .slide {
+    height: 710px;
+  }
 }
