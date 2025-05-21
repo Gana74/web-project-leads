@@ -871,7 +871,7 @@
   .argument-item,
   .contact__text,
   .argument__fact,
-  .slide__title,{
+  .slide__title {
     padding: 20px;
   }
 
