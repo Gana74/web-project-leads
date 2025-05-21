@@ -849,7 +849,8 @@
   .work__present-title,
   .work__argument-title,
   .buy-leads__title,
-  .price__menu-title {
+  .price__menu-title,
+  .slide__title {
     font-size: 25px;
   }
 
@@ -870,7 +871,7 @@
   .argument-item,
   .contact__text,
   .argument__fact,
-  .slide__title {
+  .slide__title,{
     padding: 20px;
   }
 
@@ -910,10 +911,6 @@
 
   .registration__slogan {
     font-size: 20px;
-  }
-
-  .slide__title {
-    padding: 20px 0;
   }
 
   .slide__left-number {
