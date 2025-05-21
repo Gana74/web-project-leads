@@ -869,7 +869,8 @@
   .reviews__client-item,
   .argument-item,
   .contact__text,
-  .argument__fact {
+  .argument__fact,
+  .slide__title {
     padding: 20px;
   }
 
@@ -912,7 +913,6 @@
   }
 
   .slide__title {
-    font-size: 20px;
     padding: 20px 0;
   }
 
