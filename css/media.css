@@ -220,6 +220,10 @@
     padding: 0 15% 38px;
   }
 
+  .reviews__client-item:nth-last-child(n + 2) {
+    margin-right: 0;
+  }
+
   .work__technology-caption {
     flex: 2;
   }
@@ -455,7 +459,6 @@
 
   .hero__btn {
     width: 50%;
-    font-size: 18px;
   }
 
   .hero__content-text {
@@ -601,7 +604,8 @@
   .work__argument,
   .faq__container,
   .contact,
-  .registration--mb {
+  .registration--mb,
+  .buy-leads {
     margin-bottom: 80px;
   }
 
@@ -639,7 +643,6 @@
 
   .container {
     padding: 0 15px;
-    overflow-x: hidden;
   }
 
   .btn {
@@ -681,7 +684,6 @@
 
   .hero__btn {
     width: 100%;
-    font-size: 18px;
   }
 
   .price__subtitle,
@@ -822,31 +824,73 @@
 }
 
 @media (max-width: 480px) {
+  .hero__title {
+    font-size: 35px;
+  }
+
+  .hero__desc {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+
+  .additional__title,
+  .additional__menu-title,
+  .item__title,
+  .additional__price--orange,
+  .reviews__buyer-title,
+  .price__title,
+  .conditions__title,
+  .reviews__client-title,
+  .work__technology-title,
+  .registration__slogan,
+  .work__present-title,
+  .work__argument-title,
+  .buy-leads__title,
+  .price__menu-title {
+    font-size: 25px;
+  }
+
+  .price__menu-text,
+  .desc__text,
+  .additional__price {
+    font-size: 18px;
+  }
+
+  .price__menu,
+  .additional__menu,
+  .reviews__client-item,
+  .argument-item,
+  .contact__text {
+    padding: 20px;
+  }
+
+  .additional__svg,
+  .reviews__client-rating {
+    display: none;
+  }
+
+  .slide__every {
+    padding: 0 20px;
+  }
+
+  .slide__right {
+    padding-left: 10px;
+  }
+
+  .work__present-video {
+    height: 320px;
+  }
+  .argument-item__icon {
+    min-width: 50px;
+  }
+
+  .faq__title {
+    padding: 0 0 20px;
+  }
 }
 
-@media (max-width: 363px) {
-  body {
-    font-size: 3vw;
-  }
-  .container {
-    padding: 1vw;
-    width: 100vw;
-  }
-  .hero__title {
-    font-size: 9vw;
-  }
-  .hero__desc {
-    font-size: 5.5vw;
-  }
-  .secondary {
-    opacity: 0;
-    pointer-events: none;
-    max-height: 0;
-    transition: opacity 0.3s, max-height 0.3s;
-    overflow: hidden;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+@media (max-width: 390px) {
 }
