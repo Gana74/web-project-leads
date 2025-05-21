@@ -130,6 +130,8 @@ a {
 }
 
 .header {
+  z-index: 100;
+  position: relative;
   background-color: var(--dark-grey);
   border-radius: 0 0 35px 35px;
 }
@@ -216,6 +218,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: -30px;
 }
 
 .hero__content-text {
@@ -725,12 +728,14 @@ a {
 /* --------------------------------------------------------aside */
 
 .registration {
-  /* width: 1780px; */
   height: 523px;
-  margin-bottom: 0;
   border-radius: 40px;
   padding: 60px 120px;
   background: var(--dark-grey);
+}
+
+.registration--mb {
+  margin-bottom: 120px;
 }
 
 .registration__text {
@@ -772,12 +777,11 @@ a {
 }
 
 /*------------------------------------------------------------------------------work*/
-.work__instruction {
-  margin-bottom: 120px;
-}
 
+.work,
+.work__instruction,
 .work__technology {
-  margin-bottom: 122px;
+  margin-bottom: 120px;
 }
 
 .work__technology-pic {
@@ -1131,7 +1135,7 @@ a {
 .faq__container {
   display: flex;
   flex-direction: row;
-  margin-bottom: 110px;
+  margin-bottom: 120px;
 }
 
 .accordion {
@@ -1271,12 +1275,15 @@ a {
 
 /*------------------------------------------------------------------------------------------------------------------ contact */
 
+.contact {
+  margin-bottom: 120px;
+}
+
 .contact__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   height: 100%;
-  margin-bottom: 120px;
   border-radius: 60px;
   background: var(--light-grey);
 }

@@ -273,6 +273,26 @@
 }
 
 @media (max-width: 1250px) {
+  .hero,
+  .conditions,
+  .price,
+  .price__list,
+  .reviews,
+  .reviews__buyer,
+  .work,
+  .work__instruction,
+  .work__present,
+  .work__argument,
+  .faq__container,
+  .contact,
+  .registration--mb {
+    margin-bottom: 100px;
+  }
+
+  .hero__title {
+    font-size: 60px;
+  }
+
   .burger-menu {
     display: flex;
   }
@@ -293,6 +313,32 @@
     width: 200px;
     background-color: #251d1d;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .price__title,
+  .conditions__title,
+  .additional__title,
+  .reviews__buyer-title,
+  .reviews__client-title,
+  .work__argument-title,
+  .faq__title {
+    padding: 0 10% 20px;
+    font-size: 45px;
+  }
+
+  .work__technology-title,
+  .registration__slogan,
+  .work__present-title,
+  .contact__title {
+    font-size: 45px;
+  }
+
+  .price__subtitle,
+  .reviews__buyer-text,
+  .reviews__client-subtitle,
+  .work__argument-desc {
+    padding: 0 10% 60px;
+    font-size: 28px;
   }
 
   .price__list {
@@ -331,10 +377,6 @@
     flex-direction: column;
   }
 
-  .work__present-title {
-    font-size: 35px;
-  }
-
   .work__present-title--smile {
     width: 56px;
     height: 56px;
@@ -348,20 +390,44 @@
   .argument__fact {
     width: 100%;
     max-width: 100%;
+    min-height: auto;
+  }
+
+  .argument__fact-number--text {
+    font-size: 55px;
   }
 
   .buy-leads {
     flex-direction: column;
+    padding: 0;
+    margin-bottom: 100px;
   }
 
   .buy-leads__right {
     margin-right: 0;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .buy-leads__title {
+    font-size: 45px;
     display: inline-block;
     margin-right: 40px;
+  }
+
+  .buy-leads__button {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .contact__desc,
+  .contact__item,
+  .contact__item-address,
+  .contact__item-mail,
+  .contact__item-tel,
+  .contact__footer,
+  .footer__copyright {
+    font-size: 28px;
   }
 
   .footer__href {
@@ -371,14 +437,20 @@
   .footer__item:not(:last-child)::after {
     font-size: 15px;
   }
+
+  .footer__content {
+    padding: 50px;
+  }
+
+  .footer__contact {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 1024px) {
   .container {
     padding: 0 30px;
-  }
-  .hero__title {
-    font-size: 10vh;
   }
 
   .hero__btn {
@@ -397,11 +469,6 @@
 
   .hero__desc {
     font-size: 25px;
-  }
-
-  .conditions__title {
-    font-size: 35px;
-    padding: 0 10% 40px;
   }
 
   .item__background {
@@ -438,19 +505,9 @@
     margin-bottom: 60px;
   }
 
-  .price__title {
-    padding: 0 15% 20px;
-    font-size: 35px;
-  }
-
   .price__subtitle {
     padding: 0 7% 65px;
     font-size: 28px;
-  }
-
-  .additional__title,
-  .reviews__buyer-title {
-    font-size: 35px;
   }
 
   .reviews {
@@ -500,10 +557,6 @@
     width: 100%;
   }
 
-  .work__argument-title {
-    font-size: 35px;
-  }
-
   .work,
   .work__present,
   .work__instruction {
@@ -512,10 +565,6 @@
 
   .work__present-video {
     margin: 0;
-  }
-
-  .work__argument-desc {
-    font-size: 25px;
   }
 
   .argument__fact {
@@ -531,28 +580,6 @@
     padding-bottom: 40px;
   }
 
-  .buy-leads__title {
-    font-size: 35px;
-  }
-
-  .faq__title,
-  .contact__title {
-    font-size: 35px;
-  }
-
-  .buy-leads__button,
-  .footer__contact {
-    font-size: 18px;
-  }
-
-  .footer__copyright {
-    font-size: 25px;
-  }
-
-  .contact__desc {
-    font-size: 25px;
-    margin-bottom: 45px;
-  }
   .footer__href {
     font-size: 10px;
   }
@@ -562,6 +589,54 @@
 }
 
 @media (max-width: 768px) {
+  .hero,
+  .conditions,
+  .price,
+  .price__list,
+  .reviews,
+  .reviews__buyer,
+  .work,
+  .work__instruction,
+  .work__present,
+  .work__argument,
+  .faq__container,
+  .contact,
+  .registration--mb {
+    margin-bottom: 80px;
+  }
+
+  .hero__title {
+    font-size: 45px;
+  }
+
+  .price__title,
+  .conditions__title,
+  .additional__title,
+  .reviews__buyer-title,
+  .reviews__client-title,
+  .work__argument-title,
+  .faq__title {
+    padding: 0 10% 20px;
+    font-size: 32px;
+  }
+
+  .work__technology-title,
+  .registration__slogan,
+  .work__present-title,
+  .contact__title {
+    font-size: 32px;
+  }
+
+  .contact__desc,
+  .contact__item,
+  .contact__item-address,
+  .contact__item-mail,
+  .contact__item-tel,
+  .contact__footer,
+  .footer__copyright {
+    font-size: 22px;
+  }
+
   .container {
     padding: 0 15px;
     overflow-x: hidden;
@@ -589,12 +664,6 @@
     margin-right: 0;
   }
 
-  .hero__title {
-    font-size: clamp(24px, 6vw, 32px);
-    line-height: 1.2;
-    word-wrap: break-word;
-  }
-
   .hero__present {
     flex-wrap: wrap;
     gap: 15px;
@@ -614,12 +683,6 @@
     width: 100%;
     font-size: 18px;
   }
-
-  .hero {
-    margin-bottom: 80px;
-  }
-
-
 
   .price__subtitle,
   .reviews__buyer-text,
@@ -643,7 +706,7 @@
   .work__present-title,
   .work__argument-title,
   .buy-leads__title {
-    font-size: 25px;
+    font-size: 32px;
     padding: 0;
     padding-bottom: 40px;
     margin: 0;
@@ -668,6 +731,10 @@
   .work__technology-title--smile,
   .buy-leads__svg {
     display: none;
+  }
+
+  .work__technology-title {
+    text-align: center;
   }
 
   .slide__left {
@@ -731,170 +798,30 @@
     padding: 0;
   }
 
-  .faq__container {
-    margin-bottom: 50px;
+  .buy-leads__button {
+    display: block;
+    width: 100%;
   }
 
-  .buy-leads__right {
-    text-align: center;
+  .item__title {
+    padding-bottom: 20px;
+  }
+
+  .footer__content {
+    padding: 20px;
+  }
+
+  .footer__navigation {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
+  .footer__item:not(:last-child)::after {
+    content: "";
   }
 }
 
 @media (max-width: 480px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .container {
-    padding: 0 10px;
-  }
-
-  .header__logo {
-    margin: 0;
-    max-width: 180px;
-  }
-
-  .nav__header-item--telephone {
-    font-size: 24px;
-  }
-
-  .hero__container {
-    padding: 20px 10px;
-  }
-
-  .hero__content-text--flex {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .hero__desc {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-
-  .hero__btn {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 10px;
-    font-size: 18px;
-  }
-
-  .hero__present-item {
-    flex: 0 1 100%;
-    text-align: center;
-  }
-
-  /* Общие стили для мобильных */
-  body {
-    font-size: 3.5vw;
-    padding: 0;
-  }
-  .container {
-    padding: 2vw 1vw;
-    width: 100vw;
-  }
-  .flex {
-    flex-direction: column !important;
-    gap: 12px;
-  }
-  .header__content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .header__logo img {
-    max-width: 120px;
-    height: auto;
-  }
-  .nav__header-list,
-  .nav__header-list2 {
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-start;
-  }
-  .nav__header-item--contact {
-    margin-bottom: 8px;
-  }
-  .hero__container {
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
-  }
-  .hero__title {
-    font-size: 6vw;
-    text-align: left;
-  }
-  .hero__desc {
-    font-size: 4vw;
-  }
-  .hero__btn {
-    width: 100%;
-    font-size: 4vw;
-    padding: 12px 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    border-radius: 0;
-  }
-  .hero__content-img img {
-    max-width: 100%;
-    height: auto;
-  }
-  .conditions__list {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .price__list {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .price__menu {
-    width: 100%;
-    min-width: unset;
-  }
-  .reviews__client-list {
-    overflow-x: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    scroll-snap-type: x mandatory;
-  }
-  .reviews__client-item {
-    min-width: 220px;
-    scroll-snap-align: start;
-  }
-  .registration__button {
-    width: 100%;
-    font-size: 4vw;
-    padding: 12px 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    border-radius: 0;
-  }
-  .footer__content {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-  .footer__navigation {
-    flex-direction: column;
-    gap: 8px;
-  }
-  .secondary {
-    opacity: 0;
-    pointer-events: none;
-    max-height: 0;
-    transition: opacity 0.3s, max-height 0.3s;
-    overflow: hidden;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 }
 
 @media (max-width: 363px) {
