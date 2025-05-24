@@ -1,12 +1,17 @@
 //burger//
 
 const burgerMenu = document.querySelector(".burger-menu");
+const headerNav = document.querySelector(".header__nav");
 const navList = document.querySelector(".nav__header-list");
 const navList2 = document.querySelector(".nav__header-list2");
 
 burgerMenu.addEventListener("click", function () {
+  navList2.classList.toggle("active");
   navList.classList.toggle("active");
+  headerNav.classList.toggle("active");
   burgerMenu.classList.toggle("open");
+
+  document.body.classList.toggle("stop-scroll");
 });
 
 //accordion//

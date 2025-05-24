@@ -129,6 +129,22 @@ a {
   transform-origin: 1px;
 }
 
+.open body {
+  overflow: hidden;
+}
+
+.open .line1 {
+  width: 24px;
+  transform: rotate(45deg);
+}
+.open .line2 {
+  display: none;
+}
+.open .line3 {
+  width: 24px;
+  transform: rotate(-45deg);
+}
+
 .header {
   z-index: 100;
   position: relative;
